@@ -4,6 +4,8 @@ Main Application Entry Point
 This module initializes the FastAPI application, sets up the database tables,
 and includes the API routers. It serves as the root of the application backend.
 """
+from dotenv import load_dotenv
+load_dotenv()
 from fastapi import FastAPI
 import model
 from databse import engine
